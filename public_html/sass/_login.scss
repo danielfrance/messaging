@@ -1,0 +1,20 @@
+//login
+@import "variables";
+
+section.login{
+
+	.twelve.wide.column{
+		background-image: url('/images/glowing-beach.jpg');
+		background-size: cover;
+		height: 100vh;
+	}
+
+	.four.wide.column{
+		background-color: $pink;
+		form{
+			position: relative;
+			top:20em;
+		}
+	}
+	
+}

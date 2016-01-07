@@ -1,0 +1,82 @@
+@import "variables";
+@import "compass";
+
+/*=============================================
+* DOM Styles
+=============================================*/
+* {
+	@include box-sizing(border-box);
+	outline: 0px;
+}
+body {
+	
+}
+p{
+	font: 400 16px $robotoregular;
+	line-height:1.5em}
+a{
+	text-decoration:none;
+	
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $robotobold;
+}
+
+img {max-width: 100%; }
+
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.buffer{
+	padding: 2em;
+}
+
+.text_white{
+	color: #fff;
+}
+
+.inline_block{
+	display: inline-block;
+}
+.float_right{
+	float: right;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.ui.grid{
+	margin: 0 !Important;
+}
+.quote{
+	padding: 6em 5em;
+	text-align: center;
+	color: #fff;
+	background-color: $blue;
+	.button{
+		color: $blue;
+		background-color: #fff;
+		padding: 1em;
+	}
+	p{display:inline-block;}
+	span{display: inline-block;}
+
+}
+
+.desktop{
+	display: block;
+	@media screen and (max-width: 767px){
+		display: none !Important;
+	}
+}
+
+.mobile{
+	display:none;
+	@media screen and (max-width: 767px){
+		display: block;
+	}
+}
