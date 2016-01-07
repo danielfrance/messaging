@@ -47,16 +47,7 @@ return array(
 	'connections' => array(
 
 
-		// 'mysql' => array(
-		// 	'driver'    => 'mysql',
-		// 	'host'      => 'localhost',
-		// 	'database'  => 'ittybam_kendraanddan',
-		// 	'username'  => 'ittybam',
-		// 	'password'  => '1ttyB@ng',
-		// 	'charset'   => 'utf8',
-		// 	'collation' => 'utf8_unicode_ci',
-		// 	'prefix'    => '',
-		// ),
+		
 
 			'mysql' => array(
 			'driver'    => 'mysql',

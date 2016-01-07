@@ -554,3 +554,6 @@ section.comment_section .ui.comments {
   max-width: 100% !Important; }
 section.comment_section form {
   padding-bottom: 3em; }
+section.comment_section #comment_area {
+  max-height: 500px;
+  overflow: scroll; }

@@ -63,86 +63,30 @@
 			</div>
 		</section>
 	</div>
-	<script>
-	$(document).ready(function() {
+<script type="text/javascript">
 
-		window.setInterval(function(){
-		  // location.reload();
+		// document.addEventListener("visibilitychange", function() {
+		// if (document.hidden) {     
+		// 	console.log('hidden');
+		// } else {
+		// 	console.log('active');
+		// } 
+		// });
 
-		  var url = "/show_comment";
-		  $.ajax({
-		  	url: url,
-		  	type: 'GET',
-		  	dataType: 'json',
-		  	data: '',
-		  })
-		  .success(function(data){
-		  	// console.dir(data);
+		// $(document).ready(function() {
+		// 	var interval_id;
+		// 	$(window).focus(function() {
+		// 	    if (!interval_id)
+		// 	    	console.log('active');
+		// 	        interval_id = setInterval(hard_work, 1000);
+		// 	});
 
-			var id = data.id	
-			// console.log(id);
-
-			var last = $('.comment').last(); 
-
-			var last_comment = last[0].attributes[1].nodeValue;
-			// console.dir(last_comment);
-
-			if (id != last_comment) {
-				var html = "<div class='comment' data-id='"+ data.id +"'>"+
-					    "<a class='avatar'>" +
-					      "<img src='images/avatars/"+ data.avatar +"'>" +
-					    "</a>"+
-					   "<div class='content'>" +
-					      "<a class='author'>"+data.name+"</a>" +
-					      "<div class='metadata'>" +
-					        "<span class='date'>"+data.created_at+"   </span>" +
-					      "</div>"+
-					      "<div class='text'>" +
-					        data.comment
-					      +"</div>" +
-					    "</div> "+
-					  "</div>";
-
-				$(html).insertAfter(last);
-
-			};
-
-		  })
-		  
-		  
-
-
-		}, 5000);
-
-		$('#submit').on('click', function(event) {
-			event.preventDefault();
-	
-			var url  = "/store_comment";
-
-			$.ajax({
-				url: url,
-				type: 'POST',
-				dataType: 'json',
-				data: $('form#comment_form').serialize(),
-			})
-			.success(function(data){
-				console.log(data)
-				location.reload();
-			})
-			.fail(function() {
-				console.log("error");
-			})
-			;
-			
-
-
-		});
-
-		
-		
-		
-
-	});
-
-	</script>
+		// 	$(window).blur(function() {
+		// 		console.log('hidden');
+		// 	    clearInterval(interval_id);
+		// 	    interval_id = 0;
+		// 	});
+		// });	
+     
+</script>
 @stop
