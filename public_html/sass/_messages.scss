@@ -3,7 +3,7 @@
 section.comment_section{
 
 	.ui.comments{
-		width: 100% !Important;
+		width: 92% !Important;
 		max-width: 100% !Important;
 	}
 	
@@ -15,4 +15,17 @@ section.comment_section{
 		max-height: 500px;
 		overflow: scroll;
 	}
+
+
+	.emoji-wysiwyg-editor{
+		min-height:10em !Important;
+		width: 100%;
+	}
+
+	i.emoji-picker-icon.emoji-picker{
+		width: 1em !Important;
+		height: 1em !Important;
+	}
+
+	.emoji-menu.tether-element.tether-enabled.tether-element-attached-left{left: -10em !Important;}
 }

@@ -550,10 +550,18 @@ section.login .four.wide.column {
     top: 20em; }
 
 section.comment_section .ui.comments {
-  width: 100% !Important;
+  width: 92% !Important;
   max-width: 100% !Important; }
 section.comment_section form {
   padding-bottom: 3em; }
 section.comment_section #comment_area {
   max-height: 500px;
   overflow: scroll; }
+section.comment_section .emoji-wysiwyg-editor {
+  min-height: 10em !Important;
+  width: 100%; }
+section.comment_section i.emoji-picker-icon.emoji-picker {
+  width: 1em !Important;
+  height: 1em !Important; }
+section.comment_section .emoji-menu.tether-element.tether-enabled.tether-element-attached-left {
+  left: -10em !Important; }

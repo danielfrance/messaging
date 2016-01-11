@@ -130,6 +130,7 @@ function scroll_bottom()
 			})
 			.success(function(data){
 				$('form#comment_form').find('textarea').val('');
+				$('div.emoji-wysiwyg-editor').empty();
 				get_messages_submit();
 				
 			})

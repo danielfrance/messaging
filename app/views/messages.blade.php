@@ -24,6 +24,7 @@
 		// 	Session::forget('response');
 		// }
 
+
 	 ?>
 	
 		<section class='comment_section '>
@@ -54,7 +55,8 @@
 				 
 				  <form id='comment_form' class="ui reply form" method='post' action='/store_comment' enctype='multipart/form-data'>
 				    <div class="field">
-				      <textarea name='comment'></textarea>
+				      <textarea name='comment' data-emojiable="true"></textarea>
+
 				    </div>
 				    <div id='submit' class="ui blue labeled submit icon button">
 				      <i class="icon edit"></i> Add Reply
@@ -64,6 +66,17 @@
 		</section>
 	</div>
 <script type="text/javascript">
+
+$(document).ready(function() {
+	new	EmojiPicker().discover()
+
+
+	$('i.emoji-picker-icon.emoji-picker').addClass('smile icon');
+
+	$('.emoji-menu.tether-element').css('property', 'value');
+});
+
+
 
 		// document.addEventListener("visibilitychange", function() {
 		// if (document.hidden) {     
